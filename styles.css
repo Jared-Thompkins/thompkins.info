@@ -6,23 +6,27 @@
   
   body {
     font-family: 'Roboto', Arial, sans-serif;
-  }
+    max-width: 1000px;
+    margin: 0 auto; 
+    padding: 0 2rem;
+}
   
 /* Navigation Section */
 
   header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 1.2rem ;
     background-color: #000;
   }
 
   nav {
-    width: 100%;
+    width: 80%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    margin: 0 auto;
   }
   
   .logo {
@@ -30,6 +34,7 @@
     font-size: 1.5rem;
     font-weight: 500;
     text-decoration: none;
+    padding-right: 20%;
   }
   
   .nav-links {
@@ -60,5 +65,60 @@
     .nav-links {
       display: none;
     }
+    .logo {
+      padding-right: 80%;
+    }
+  }
+  
+  /* Hero Section */
+.hero {
+    text-align: left;
+    padding: 3rem 0;
+    border-bottom: 1px solid #000;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .social-links {
+    display: flex;
+    /* justify-content: center; */
+    padding-left: 5rem;
+    gap: 1rem;
+  }
+  
+  .social-links a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .social-links a:hover {
+    color: #ff5252;
+  }
+  /* Experience Section */
+.experience {
+    padding: 2rem 0;
+    border-bottom: 1px solid #000; /* Add a bottom border */
+  }
+  
+  .experience h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .experience h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .experience ul {
+    padding-left: 5rem;
   }
   
