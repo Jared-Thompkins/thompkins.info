@@ -194,3 +194,45 @@
     justify-content: space-between;
     font-weight: 700;
   }
+
+  /* Organizations Section */
+  .organizations {
+    padding: 0.5rem 0;
+  }
+
+  .organizations h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .organizations h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .organizations p {
+    margin-bottom: 0.5rem;
+  }
+
+  .organizations ul {
+    padding-left: 1rem;
+    list-style-type: none;
+    padding-left: 5rem;
+  }
+
+  .organizations .description {
+    margin-left: 1rem;
+    color: #000000;
+  }
+
+  .organizations .years {
+    text-align: right;
+  }
+
+  .organizations .org-info {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+  }
