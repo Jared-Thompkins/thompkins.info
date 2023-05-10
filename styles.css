@@ -141,6 +141,8 @@
   .education .description {
     margin-left: 1rem;
     color: #000000;
+    line-height: 1.4;
+    word-spacing: 3px;
   }
 
   .years {
@@ -183,6 +185,8 @@
   .experiences .description {
     margin-left: 1rem;
     color: #000000;
+    line-height: 1.4;
+    word-spacing: 3px;
   }
 
   .experiences .years {
@@ -236,3 +240,21 @@
     justify-content: space-between;
     font-weight: 700;
   }
+/* Skills Section */
+.technical-skills {
+  padding: 2rem 0;
+}
+
+.skills-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 0;
+  margin: 0;
+}
+
+.skills-list li {
+  margin: 0 1rem;
+  font-weight: 500;
+}
