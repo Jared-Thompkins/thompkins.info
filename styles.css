@@ -100,7 +100,7 @@
   }
 
   .social-links a {
-    color: #5656566f;
+    color: #5656569b;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s;
@@ -152,4 +152,45 @@
     justify-content: space-between;
     font-weight: 700;
   }
-  
+
+  /* Experiences Section */
+  .experiences {
+    padding: 0.5rem 0;
+  }
+
+  .experiences h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .experiences h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .experiences p {
+    margin-bottom: 0.5rem;
+  }
+
+  .experiences ul {
+    padding-left: 1rem;
+    list-style-type: none;
+    padding-left: 5rem;
+  }
+
+  .experiences .description {
+    margin-left: 1rem;
+    color: #000000;
+  }
+
+  .experiences .years {
+    text-align: right;
+  }
+
+  .experiences .experience-info {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+  }
