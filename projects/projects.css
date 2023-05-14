@@ -22,11 +22,12 @@
   }
 
   nav {
-    width: 80%;
+    width: 70%;
+    max-width: 1200px;
+    margin: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
   }
   
   .logo {
@@ -34,7 +35,6 @@
     font-size: 1.5rem;
     font-weight: 500;
     text-decoration: none;
-    padding-right: 20%;
   }
   
   .nav-links {
@@ -65,9 +65,11 @@
     .nav-links {
       display: none;
     }
-    .logo {
-      padding-right: 80%;
+    body {
+        padding: 0 0rem;
     }
+
+
   }
 
 
@@ -81,18 +83,35 @@
     color: #333;
   }
   
-  #portfolio h2 {
-    font-size: 2em;
+
+#portfolio h2 span {
+    font-size: 1.5em;
     font-weight: bold;
     margin-bottom: 30px;
-  }
+    position: relative;
+    display: inline-block;
+}
+
+#portfolio h2 span:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    width: 100%;
+    background-color: #333;
+}
+
   
   .project {
     display: inline-block;
-    width: 500px;
+    max-width: 100%;
+    max-width: 500px;
     margin: 0 20px 40px 20px;
     text-align: left;
+    box-sizing: border-box;
   }
+
   
   .project .project-img {
     position: relative;
@@ -100,13 +119,8 @@
     border-radius: 5px;
   }
 
-  @media (max-width: 1085px) {
-    .project img {
-      width: 100%;
-    }
-  }
   .project img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     margin-bottom: 15px;
   }
@@ -135,25 +149,6 @@
   .button:hover {
     background-color: #ff5252;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
   /* Footer */

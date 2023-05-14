@@ -22,11 +22,12 @@
   }
 
   nav {
-    width: 80%;
+    width: 70%;
+    max-width: 1200px;
+    margin: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
   }
   
   .logo {
@@ -34,7 +35,6 @@
     font-size: 1.5rem;
     font-weight: 500;
     text-decoration: none;
-    padding-right: 20%;
   }
   
   .nav-links {
@@ -68,6 +68,26 @@
     .logo {
       padding-right: 80%;
     }
+    body {
+      padding: 0 0rem; 
+    }
+    section.education ul, section.experiences ul, section.organizations ul {
+      padding-left: 2rem;
+    }
+    section, h2, section.hero {
+      box-sizing: border-box;
+      padding-left: 1rem;
+    }
+    ul {
+      box-sizing: border-box;
+      padding-right: 2rem;
+      padding-left: 20rem;
+    }
+    body .social-links {
+      padding-left: 2rem;
+    }
+    
+
   }
   
   /* Hero Section */
@@ -145,7 +165,6 @@
   }
 
   .education ul {
-    padding-left: 1rem;
     list-style-type: none;
     padding-left: 5rem;
   }
@@ -212,7 +231,6 @@
   }
 
   .experiences ul {
-    padding-left: 1rem;
     list-style-type: none;
     padding-left: 5rem;
   }
@@ -260,7 +278,6 @@
   }
 
   .organizations ul {
-    padding-left: 1rem;
     list-style-type: none;
     padding-left: 5rem;
   }
@@ -290,6 +307,8 @@
     padding: 2.5rem ;
     background-color: #000;
     margin-top: 15px;
+    overflow: auto;
+    border: none;
   }
 
   .social-link2 {
