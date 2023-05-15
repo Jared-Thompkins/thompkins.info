@@ -20,7 +20,7 @@ def send_email(name, email, message):
     smtp_server = "smtp.outlook.com"
     smtp_port = 587 # Change this if your SMTP server uses a different port
     username = "jared.thompkins@outlook.com"  # Your email address
-    password = "" # Your email password
+    password = os.environ.get('EMAIL_PASSWORD')
 
     msg = MIMEMultipart()
     msg['From'] = username
