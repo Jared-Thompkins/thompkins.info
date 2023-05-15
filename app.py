@@ -7,11 +7,13 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+
+
+app = Flask(__name__)
+
 @app.route('/', methods=['GET'])
 def home():
     return {"message": "Hello, World!"}, 200
-
-app = Flask(__name__)
 
 @app.route('/contact', methods=['POST'])
 def contact():
