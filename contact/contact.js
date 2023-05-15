@@ -15,7 +15,23 @@ document.getElementById('contactForm').addEventListener('submit', function(event
       return;
     }
   
-    // Your code for sending the form data would go here
+    fetch('https://your-app-name.herokuapp.com/contact', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: new URLSearchParams({
+            'name': name,
+            'email': email,
+            'message': message
+        })
+    })
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch((error) => {
+      console.error('Error:', error);
+    });
+    
   
     alert('Your message has been sent. Thank you!');
   });
