@@ -15,7 +15,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
       return;
     }
   
-    fetch('https://your-app-name.herokuapp.com/contact', {
+    fetch('https://project-site.herokuapp.com/contact', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
