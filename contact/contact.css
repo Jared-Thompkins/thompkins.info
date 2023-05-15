@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', Arial, sans-serif;
+    max-width: 1000px;
+    margin: 0 auto; 
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem ;
+    background-color: #000;
+  }
+
+  nav {
+    width: 70%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style-type: none;
+    
+  }
+  
+  .nav-links li {
+    margin-left: 1.5rem;
+    
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #ff5252;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+    body {
+        padding: 0 0rem;
+    }
+  }
+
+
+/* Contact Body Section */
+
+/* Add these styles at the end of the file */
+.contact {
+    padding: 2rem 2rem;
+  }
+  
+  .contact h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  #contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  #contactForm input, #contactForm textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  #contactForm textarea {
+    resize: vertical;
+    min-height: 200px;
+  }
+  
+  #contactForm input[type="submit"] {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  #contactForm input[type="submit"] {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px; /* Add padding */
+    border-radius: 5px; /* Add border radius */
+    font-weight: bold; /* Make text bold */
+    transition: background-color 0.3s ease; /* Add transition */
+  }
+  
+  #contactForm input[type="submit"]:hover {
+    background-color: #444; /* Change color on hover */
+  }
+  
+  
+/* Footer Section */
+
+  .footer {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 2.5rem ;
+    background-color: #000;
+    margin-top: 15px;
+    flex-shrink: 0;
+  }
+
+  .social-link2 {
+    background-color: #D8D8D8;
+    color: #333;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+  }
+
+  .social-link2:hover {
+    background-color: #333;
+    color: #fff;
+  }

@@ -8,8 +8,8 @@
   <meta name="author" content="Jared Thompkins">
   <title>Jared Thompkins | Website</title>
   <link rel="shortcut icon" type="x-icon" href="/img/logo.PNG">
-  <link rel="stylesheet" href="projects.css">
-  <script src="scripts.js" defer></script>
+  <link rel="stylesheet" href="contact.css">
+  <script src="contact.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -31,25 +31,18 @@
         </nav>
       </header>
 
-
-
-      <section id="portfolio">
-        <h2><span>Projects</span></h2>
-        <div class="project">
-          <img src="/img/project1.gif" alt="Project 1">
-          <h3>MoonShot IOS</h3>
-          <p>MoonShot is an IOS application written in Swift that provides a brief history of Apollo missions. MoonShot uses custom SwiftUI layouts to create an a visually appealing and interactive user experience.</p>
-          <a href="https://github.com/Jared-Thompkins/Moonshot" class="button">View Project</a>
-        </div>
-        <div class="project">
-          <img src="/img/project2_1.png" alt="Project 2">
-          <h3>Bootstrap Webpage</h3>
-          <p>Website created and written in HTML, CSS, and JS. Utilized Bootstrap framework. The homepage welcomes visitors with a visually appealing hero section. Allows visitors to easily navigate and interact with the website.</p>
-          <a href="https://github.com/Jared-Thompkins/bootstrap-website" class="button">View Project</a>
-        
-        </div>
- 
-
+<main>
+    <section class="contact">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+  </main>
+  
     </section>
     <div class="footer">
       <a href="https://www.linkedin.com/in/jaredthompkins/" class="social-link2" target="_blank"><i class="fab fa-linkedin-in"></i></a>
@@ -57,4 +50,4 @@
     </div>
     </section>
          </section>
-    </body>
+</body>
