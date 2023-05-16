@@ -20,7 +20,9 @@
     padding: 1.2rem ;
     background-color: #000;
   }
-
+  .container {
+    padding-right: 100rem
+  }
   nav {
     width: 70%;
     max-width: 1200px;
