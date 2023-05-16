@@ -134,6 +134,10 @@
     body .social-links {
       padding-left: 2rem;
     }
+
+.container {
+  margin-right: 5%;
+}
   
   /* Hero Section */
 .hero {
