@@ -1,3 +1,8 @@
+document.querySelector('.hamburger').addEventListener('click', function() {
+  document.querySelector('.nav-links').classList.toggle('show');
+});
+
+
 function toggleDescription(button) {
     const action = button.getAttribute('data-action');
     const moreText = button.parentElement.querySelector('.more');

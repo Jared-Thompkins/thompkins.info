@@ -64,11 +64,62 @@ main {
   .nav-links a:hover {
     color: #ff5252;
   }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+.bar {
+    width: 2rem;
+    height: 0.25rem;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+}
+
+.nav-links.show {
+  display: flex;
+  animation: fadeIn 0.5s ease-in-out 1;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
   
   /* Responsive styles */
   @media screen and (max-width: 768px) {
     .nav-links {
       display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      background-color: #000;
+    }
+
+    .nav-links li {
+      margin: 1.5rem 0;
+      padding-left: 1rem;
+    }
+    .hamburger {
+      display: flex;
     }
     body {
         padding: 0 0rem;

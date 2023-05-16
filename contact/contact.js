@@ -1,3 +1,8 @@
+document.querySelector('.hamburger').addEventListener('click', function() {
+  document.querySelector('.nav-links').classList.toggle('show');
+});
+
+
 document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault();
   
@@ -41,3 +46,4 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     return re.test(String(email).toLowerCase());
   }
   
+
