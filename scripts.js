@@ -35,5 +35,10 @@ function topFunction() {
   });
 }
 
-  
-  
+let aboutItem = document.querySelectorAll('.nav-links li')[1];
+
+aboutItem.addEventListener('click', function() {
+  if(window.innerWidth <= 768) {
+    document.querySelector('.nav-links').classList.remove('show');
+  }
+});
