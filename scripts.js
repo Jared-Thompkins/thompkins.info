@@ -19,5 +19,21 @@ function toggleDescription(button) {
       seeLessButton.style.display = 'none';
     }
   }
+
+
+var mybutton = document.getElementById("back-to-top");
+
+window.onscroll = function() {scrollFunction()};
+mybutton.style.display = "block"
+
+mybutton.onclick = function() {topFunction()};
+
+function topFunction() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
   
   
