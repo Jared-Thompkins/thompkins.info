@@ -21,3 +21,24 @@ function toggleDescription(button) {
   }
 
 
+var mybutton = document.getElementById("back-to-top");
+
+window.onscroll = function() {scrollFunction()};
+mybutton.style.display = "block"
+
+mybutton.onclick = function() {topFunction()};
+
+function topFunction() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+let aboutItem = document.querySelectorAll('.nav-links li')[1];
+
+aboutItem.addEventListener('click', function() {
+  if(window.innerWidth <= 768) {
+    document.querySelector('.nav-links').classList.remove('show');
+  }
+});
