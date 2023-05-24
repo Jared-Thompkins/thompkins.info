@@ -8,8 +8,8 @@
   <meta name="author" content="Jared Thompkins">
   <title>Jared Thompkins | Website</title>
   <link rel="shortcut icon" type="x-icon" href="/img/JT1.jpg">
-  <link rel="stylesheet" href="contact.css">
-  <script src="contact.js" defer></script>
+  <link rel="stylesheet" href="more.css">
+  <script src="more.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -36,18 +36,35 @@
         </nav>
       </header>
 
-<main>
-    <section class="contact">
-      <h2>Contact Me</h2>
-      <form id="contactForm">
-        <input type="text" id="name" name="name" placeholder="Your Name" required>
-        <input type="email" id="email" name="email" placeholder="Your Email" required>
-        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-        <input type="submit" value="Submit">
-      </form>
-    </section>
-  </main>
-  
+      <main>
+
+      <h1 class="section-title"><span>Various Application Materials</span></h1>
+
+      <div class="think-chicago">
+        <h2>Think Chicago Application</h2>
+        <p>Think Chicago is a program that invites top-tier university students from across chicago to take a behind-the-scenes tour of Chicago’s thriving tech & innovation sector. I applied to this program in May of 2023.</p>
+      
+        <div id="video-container">
+          <div id="player">
+            <script src="https://www.youtube.com/iframe_api"></script>
+            <script>
+              var player;
+              function onYouTubeIframeAPIReady() {
+                player = new YT.Player('player', {
+                  videoId: 'LSElg7C6oOw',
+                });
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+      <a href="https://www.thinkchicago.net/lolla" target="_blank" id="viewApplicationButton" class="btn">View Application</a>
+      
+
+      
+
+      
+</main>
     </section>
     <div class="footer">
       <a href="https://www.linkedin.com/in/jaredthompkins/" class="social-link2" target="_blank"><i class="fab fa-linkedin-in"></i></a>
