@@ -42,3 +42,5 @@ aboutItem.addEventListener('click', function() {
     document.querySelector('.nav-links').classList.remove('show');
   }
 });
+
+

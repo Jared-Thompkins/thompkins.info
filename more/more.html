@@ -22,8 +22,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-   <!--Icons  -->
    <script src="https://kit.fontawesome.com/429e3a7f16.js" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
 
 </head>
 
@@ -47,34 +48,61 @@
       </header>
 
       <main>
-
-      <h1 class="section-title"><span>Various Application Materials</span></h1>
-
-      <div class="think-chicago">
-        <h2>ThinkChicago Application</h2>
-        <p>ThinkChicago is a 3-day program that invites top-tier university students from across Chicago to take a behind-the-scenes tour of Chicago’s thriving tech & innovation sector. I applied to this program in May of 2023.</p>
+        <h1 class="section-title"><span>Various Application Materials</span></h1>
+        <hr class="divider">
+        <div class="think-chicago">
+          <h2>ThinkChicago Application Video</h2>
+          <p>ThinkChicago is a 3-day program that invites top-tier university students from across Chicago to take a behind-the-scenes tour of Chicago’s thriving tech & innovation sector. I applied to this program in May of 2023. The following is my statement of interest.</p>
       
-        <div id="video-container">
-          <div id="player">
-            <script src="https://www.youtube.com/iframe_api"></script>
-            <script>
-              var player;
-              function onYouTubeIframeAPIReady() {
-                player = new YT.Player('player', {
-                  videoId: 'LSElg7C6oOw',
-                });
-              }
-            </script>
+          <div id="video-container">
+            <div id="player">
+              <script src="https://www.youtube.com/iframe_api"></script>
+              <script>
+                var player;
+                function onYouTubeIframeAPIReady() {
+                  player = new YT.Player('player', {
+                    videoId: 'LSElg7C6oOw',
+                  });
+                }
+              </script>
+            </div>
+          </div>
+      
+          <a href="https://www.thinkchicago.net/lolla" target="_blank" id="viewApplicationButton" class="btn">View Application</a>
+        </div>
+      
+        <hr class="divider">
+
+        <div class="SVMP">
+          <h2>Harvard's Summer Venture in Management Program (SVMP)</h2>
+          <p>Harvard's Summer Venture in Management Program is a unique and intensive week-long residential program that takes place in the historic city of Cambridge, Massachusetts. This immersive experience is designed to provide individuals with insights into the life and career advantages that come with an HBS MBA. Essay questions answered include:</p>
+          <ol class="question-list">
+            <li>Outside of school, what do you like to do? What are your hobbies and interests?</li>
+            <li>What is your dream job?</li>
+            <li>Who do you admire most?</li>
+          </ol>
+          
+          <div class="gallery-container">
+            <a href="/img/SVMP1.jpg" data-fancybox="gallery" data-caption="Question: Outside of school, what do you like to do? What are your hobbies and interests?" data-fancybox-zoom class="gallery-item">
+              <img src="/img/SVMP1.jpg" />
+            </a>
+          
+            <a href="/img/SVMP2.jpg" data-fancybox="gallery" data-caption="Question: What is your dream job?" data-fancybox-zoom class="gallery-item">
+              <img src="/img/SVMP2.jpg" />
+            </a>
+          
+            <a href="/img/SVMP3.jpg" data-fancybox="gallery" data-caption="Question: Who do you admire most?" data-fancybox-zoom class="gallery-item">
+              <img src="/img/SVMP3.jpg" />
+            </a>
+        </div>
+        
+          
+            
           </div>
         </div>
-      </div>
-      <a href="https://www.thinkchicago.net/lolla" target="_blank" id="viewApplicationButton" class="btn">View Application</a>
+        <a href="https://www.hbs.edu/svmp/Pages/default.aspx" target="_blank" id="viewApplicationButton" class="btn">View Application</a>
+      </main>
       
-
-      
-
-      
-</main>
     </section>
     <div class="footer">
       <a href="https://www.linkedin.com/in/jaredthompkins/" class="social-link2" target="_blank"><i class="fab fa-linkedin-in"></i></a>
@@ -82,4 +110,11 @@
     </div>
     </section>
          </section>
+         <script>
+  Fancybox.bind('[data-fancybox="gallery"]', {
+    // Custom options for the gallery
+  });
+
+        </script>
+        
 </body>

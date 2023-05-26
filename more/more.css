@@ -16,6 +16,7 @@
 
 main {
     flex: 1 0 auto;
+
 }
 
   header {
@@ -159,7 +160,9 @@ main {
 
 /* Think Chicago */
 
-
+.think-chicago {
+  margin-bottom: 3rem;
+}
 
 #viewApplicationButton {
     padding: 0.5em 1em;
@@ -193,11 +196,50 @@ p {
     }
 
     #video-container {
-        margin-bottom: 20px;
+        margin-bottom: 1.75rem;
+        display: flex;
+        justify-content: center;
       }
       
+      .divider {
+        border-top: 1px solid #000;
+        margin: 1em 0;
+    }
+    
+    .question-list {
+      list-style-position: inside;
+      font-size: 1.1em;
+      font-weight: 999;
+      margin-bottom: 1.5rem;
+      color: #333;
+      line-height: 1.5rem;
+    }
+    
 
+      .gallery-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+      
+      .gallery-item {
+        flex: 1 1 200px; 
+        margin: 0.5em;
+      }
+      
+      .gallery-item img {
+        width: 100%;
+        height: auto;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+        margin-bottom: 1.75rem;
+        transition: transform 0.3s ease;
+      }
 
+      .gallery-item img:hover {
+        transform: scale(1.01);
+    }
+      
+      
 
 
 
@@ -212,7 +254,7 @@ p {
     align-items: center;
     padding: 2.5rem ;
     background-color: #000;
-    margin-top: 15px;
+    margin-top: 50px;
     flex-shrink: 0;
   }
 
