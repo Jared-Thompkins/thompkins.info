@@ -15,8 +15,9 @@
 }
 
 main {
-    flex: 1 0 auto;
+  flex: 1 0 auto;
 }
+
 
   header {
     display: flex;
@@ -177,7 +178,7 @@ main {
   
 /* Footer Section */
 
-  .footer {
+footer {
     display: flex;
     justify-content: right;
     align-items: center;

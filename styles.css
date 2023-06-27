@@ -4,6 +4,9 @@
     box-sizing: border-box;
   }
   
+  
+
+  
   body {
     font-family: 'Roboto', Arial, sans-serif;
     max-width: 1000px;
@@ -99,8 +102,10 @@
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
-  
+
   /* Responsive styles */
+
+  
   @media screen and (max-width: 768px) {
     .nav-links {
       display: none;
@@ -168,7 +173,6 @@
   }
 
   .social-links a {
-    color: #000000;
     text-decoration: underline;
     font-weight: 500;
     transition: color 0.3s;
@@ -181,7 +185,6 @@
   }
 
   .link {
-    color: #000000;
     text-decoration: underline;
     font-weight: 500;
     transition: color 0.3s;
