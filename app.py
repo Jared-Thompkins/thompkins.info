@@ -11,10 +11,6 @@ load_dotenv()
 
 app = Flask(__name__)
 
-@app.route('/', methods=['GET'])
-def home():
-    return {"message": "Hello, World!"}, 200
-
 @app.route('/contact', methods=['POST'])
 def contact():
     name = request.form.get('name')
@@ -26,10 +22,10 @@ def contact():
     return {"message": "Email sent successfully"}, 200
 
 def send_email(name, email, message):
-    # Set up your own SMTP server here
+    
     smtp_server = "smtp.outlook.com"
-    smtp_port = 587 # Change this if your SMTP server uses a different port
-    username = "jared.thompkins@outlook.com"  # Your email address
+    smtp_port = 587 
+    username = "jared.thompkins@outlook.com"  
     password = os.environ.get('EMAIL_PASSWORD')
 
     msg = MIMEMultipart()
